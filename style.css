@@ -13,67 +13,121 @@
   font-variation-settings:"wdth" 100;
 }
 }
-
 .logo img{
     max-width: 150px;
     width: 100%;
     height: auto;
 }
-
 body{
     background: linear-gradient(135deg, #000, #0a192f);
     height: 100vh;
 }
-
 .interface{
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 0;
 }
-
-/*ESTILO DO CABECALHO*/
-header{
-    padding: 20px 2%;
+.flex{
+    display:flex
 }
-
-header > .interface{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header a{
-    color: #777777;
-    text-decoration: none;
-    display: inline-block;
-    transition: transform 0.2s ease;
-}
-
-header a:hover{
-    color: #fff;
-    transform: scale(1.1);
-}
-
-header nav ul{
-    list-style-type: none;
-}
-
-header nav ul li{
-    display: inline-block;
-    padding: 0 50px;
-}
-
-header .contato button{
+.contato button{
     padding: 15px 40px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     background-color: rgb(226, 189, 96);
     border: 0;
     border-radius: 20px;
     cursor: pointer;
 
 }
-
-header .contato button:hover{
+.contato button:hover{
     box-shadow: 0px 0px 8px #e2bd608c;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/*ESTILO DO CABECALHO*/
+header{
+    padding: 20px 2%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: #777777;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+header a:hover{
+    color: #fff;
+    transform: scale(1.1);
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 50px;
+}
+
+/*ESTILO DO TOPO*/
+section.topoDoSite{
+    padding: 30px 3%;
+
+}
+.flex{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+.imgTopoDoSite{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.imgTopoDoSite img{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.txtTopoDoSite{
+    width: 50%;
+}
+.txtTopoDoSite h1{
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+}
+.topoDoSite .txtTopoDoSite p{
+    color: #8892b0;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 40px 0;
+
+}
+.topoDoSite .txtTopoDoSite ul{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+.topoDoSite .txtTopoDoSite ul li{
+    color: #8892b0;
+    font-size: 18px;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 20px;
+}
+.topoDoSite .txtTopoDoSite ul li strong{
+    color: #e2bd60;
+    font-weight: 600;
+    min-width: 130px;
+}
+.topoDoSite .txtTopoDoSite .contato{
+    margin-top: 40px;
 }
