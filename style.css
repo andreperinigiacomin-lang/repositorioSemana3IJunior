@@ -79,6 +79,7 @@ header nav ul li{
 /*ESTILO DO TOPO*/
 section.topoDoSite{
     padding: 30px 3%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
 
 }
 .flex{
@@ -139,6 +140,7 @@ section.topoDoSite{
 /*ESTILO DAS ESPECIALIDADES*/
 section.projetos{
     padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
 }
 section.projetos div.flex{
     display: grid;
@@ -203,6 +205,7 @@ h1.tituloProjetos span{
 
 section.sobre-mim{
     padding: 110px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
 }
 .sobre-mim .interface{
     display: flex;
@@ -354,6 +357,7 @@ section.sobre-mim{
 /*ESTILO DO FORMULARIO*/
 section.formulario{
     padding: 80px 4%;
+    box-shadow: 0 0 20px 10px #ffffff1d;
 }
 section.formulario h1{
     text-align: center;
@@ -398,4 +402,41 @@ form .btn-enviar input{
 form .btn-enviar input:hover{
     box-shadow: 0 0 12px #e9d8ad;
     transform: scale(1.05);
+}
+/*ESTILO DO RODAPE*/
+footer{
+    padding: 0 4%;
+}
+footer .logo-footer img{
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
+footer .bloco-redes{
+    display: flex;
+}
+footer .linha-footer{
+    padding: 20px;
+}
+footer .linha-footer p i{
+    color: #e2bd60;
+    font-size: 22px;
+}
+footer .linha-footer p a{
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.borda{
+    border-top: 2px solid #e2bd60;
+}
+footer .linha-footer p a:hover{
+    text-decoration: underline;
+}
+footer .linha-footer .flex .bloco-redes{
+    display: flex;
+    justify-content: flex-end;
 }
