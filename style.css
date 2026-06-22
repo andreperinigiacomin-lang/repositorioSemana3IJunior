@@ -440,3 +440,99 @@ footer .linha-footer .flex .bloco-redes{
     display: flex;
     justify-content: flex-end;
 }
+
+@media screen and (max-width: 1024px) {
+    .menu-desktop, .contato{
+        display: none;
+    }
+    h1.tituloProjetos {
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .topoDoSite .flex {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .imgTopoDoSite, .txtTopoDoSite {
+        width: 100%;
+        text-align: center;
+    }
+    .topoDoSite .txtTopoDoSite ul li {
+        justify-content: center;
+    }
+    .sobre-mim .interface {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .conteudo-sobre {
+        width: 100%;
+    }
+    .container-skills-redes {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .bloco-redes {
+        border-right: none;
+        border-bottom: 3px solid #e2bd60;
+        padding-right: 0;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+}
+/* Ajustes específicos para Celulares*/
+@media screen and (max-width: 768px) {
+    .interface {
+        padding: 0 20px; 
+    }
+    h1.tituloProjetos {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 40px;
+        word-wrap: break-word;
+    }
+    section.projetos div.flex {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    /*TAMANHO DOS CARDS*/
+    .projetos-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .projetos-box.texto-box {
+        width: 100%;
+    }
+    .projetos .projetos-box h3 {
+        font-size: 24px;
+    }
+    .projetos-box .icon-card i {
+        font-size: 45px;
+    }
+
+    /*SOBRE MIM*/
+    .img-sobre-mim {
+        width: 260px;
+        height: 325px;
+    }
+    .conteudo-sobre h2 {
+        font-size: 45px;
+    }
+    .conteudo-sobre h2::before {
+        font-size: 55px;
+        left: -25px;
+        top: -15px;
+    }
+
+    /*Footer */
+    footer .flex {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    footer .linha-footer .flex .bloco-redes {
+        justify-content: center;
+    }
+}
