@@ -536,3 +536,6 @@ footer .linha-footer .flex .bloco-redes{
         justify-content: center;
     }
 }
+html{
+    scroll-behavior: smooth;
+}
